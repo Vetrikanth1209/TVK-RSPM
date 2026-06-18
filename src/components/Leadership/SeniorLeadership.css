@@ -1,0 +1,126 @@
+.district-section{
+  padding:80px 8%;
+  background:#fff;
+}
+
+.district-heading{
+  text-align:center;
+  margin-bottom:50px;
+}
+
+.district-heading span{
+  padding:10px 20px;
+  border-radius:50px;
+  color:white;
+  font-weight:700;
+  background:linear-gradient(135deg,#FFC107,#8B0000);
+}
+
+.district-heading h2{
+  margin-top:20px;
+  font-size:clamp(2rem,5vw,4rem);
+  font-weight:900;
+  background:linear-gradient(90deg,#8B0000,#FFC107);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.district-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:30px;
+  max-width:1400px;
+  margin:auto;
+}
+
+.district-card{
+  position:relative;
+  display:flex;
+  gap:25px;
+  padding:20px;
+  border-radius:30px;
+  background:white;
+  overflow:hidden;
+  box-shadow:0 15px 40px rgba(0,0,0,.08);
+}
+
+.district-card::before{
+  content:"";
+  position:absolute;
+  width:180px;
+  height:180px;
+  top:-50px;
+  right:-50px;
+  border-radius:50%;
+  background:radial-gradient(circle,rgba(255,193,7,.15),transparent);
+}
+
+.district-image{
+  width:180px;
+  height:220px;
+  object-fit:cover;
+  border-radius:25px;
+}
+
+.district-content{
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.district-badge{
+  width:fit-content;
+  padding:8px 15px;
+  border-radius:50px;
+  background:rgba(139,0,0,.08);
+  color:#8B0000;
+  font-size:.8rem;
+  font-weight:700;
+}
+
+.district-content h3{
+  margin-top:12px;
+  font-size:2rem;
+  font-weight:800;
+}
+
+.district-line{
+  width:80px;
+  height:4px;
+  margin:15px 0;
+  border-radius:20px;
+  background:linear-gradient(90deg,#FFC107,#8B0000);
+}
+
+.district-content button{
+  width:fit-content;
+  border:none;
+  padding:12px 22px;
+  border-radius:50px;
+  color:white;
+  font-weight:700;
+  background:linear-gradient(135deg,#FFC107,#8B0000);
+}
+
+@media(max-width:992px){
+  .district-grid{
+    grid-template-columns:1fr;
+  }
+
+  .district-card{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .district-image{
+    margin:auto;
+  }
+
+  .district-badge,
+  .district-content button,
+  .district-line{
+    margin-left:auto;
+    margin-right:auto;
+  }
+}

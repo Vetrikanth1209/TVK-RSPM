@@ -1,0 +1,955 @@
+.leadership-section {
+  background: #ffffff;
+}
+
+/* SECTION */
+
+.leader-block {
+  min-height: 90vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 60px;
+
+  padding: 100px 8%;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+/* IMAGE */
+
+.leader-image-container {
+  flex: 1;
+}
+
+.leader-image {
+  width: 100%;
+  max-width: 650px;
+
+  border-radius: 30px;
+
+  display: block;
+
+  box-shadow:
+    0 20px 50px rgba(0,0,0,0.12);
+
+  transition: all .4s ease;
+}
+
+.leader-image:hover {
+  transform: scale(1.03);
+}
+
+/* CONTENT */
+
+.leader-content {
+  flex: 1;
+}
+
+.leader-tag {
+  display: inline-block;
+
+  padding: 10px 20px;
+
+  border-radius: 30px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #FFC107,
+      #8B0000
+    );
+
+  color: white;
+
+  font-weight: 700;
+}
+
+.leader-name {
+  margin-top: 20px;
+
+  font-size: clamp(
+    2.5rem,
+    5vw,
+    4.5rem
+  );
+
+  font-weight: 800;
+
+  background:
+    linear-gradient(
+      90deg,
+      #8B0000,
+      #FFC107
+    );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.leader-description {
+  margin-top: 25px;
+
+  color: #555;
+
+  line-height: 1.8;
+
+  font-size: 1.15rem;
+}
+
+.leader-btn {
+  margin-top: 30px;
+
+  border: none;
+
+  padding: 16px 35px;
+
+  border-radius: 50px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #FFC107,
+      #8B0000
+    );
+
+  color: white;
+
+  font-weight: 700;
+
+  transition: .3s ease;
+}
+
+.leader-btn:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 15px 35px rgba(0,0,0,0.15);
+}
+
+/* TABLET */
+
+@media(max-width:992px){
+
+  .leader-block,
+  .reverse{
+    flex-direction: column;
+  }
+
+  .leader-content{
+    text-align:center;
+  }
+}
+
+/* MOBILE */
+
+@media(max-width:576px){
+
+  .leader-block{
+    padding:80px 20px;
+  }
+
+  .leader-name{
+    font-size:2.5rem;
+  }
+
+  .leader-description{
+    font-size:1rem;
+  }
+}
+
+/* DISTRICT SECTION */
+
+.district-section {
+  padding: 120px 8%;
+
+  background: #fff;
+}
+
+.section-header {
+  text-align: center;
+
+  margin-bottom: 70px;
+}
+
+.section-tag {
+  padding: 10px 20px;
+
+  border-radius: 40px;
+
+  color: white;
+
+  font-weight: 700;
+
+  background:
+  linear-gradient(
+    90deg,
+    #FFC107,
+    #8B0000
+  );
+}
+
+.section-header h2 {
+  margin-top: 25px;
+
+  font-size: clamp(
+    2rem,
+    4vw,
+    4rem
+  );
+
+  font-weight: 800;
+
+  background:
+  linear-gradient(
+    90deg,
+    #8B0000,
+    #FFC107
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* GRID */
+
+.district-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit,minmax(350px,1fr));
+
+  gap: 40px;
+}
+
+/* CARD */
+
+.district-card {
+  background: white;
+
+  border-radius: 30px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 20px 50px rgba(0,0,0,.08);
+
+  transition: .4s ease;
+}
+
+.district-card:hover {
+  transform: translateY(-10px);
+}
+
+.district-card img {
+  width: 100%;
+
+  height: 350px;
+
+  object-fit: cover;
+}
+
+.district-content {
+  padding: 30px;
+}
+
+.district-content h3 {
+  font-size: 1.8rem;
+
+  font-weight: 700;
+}
+
+.district-content span {
+  display: block;
+
+  color: #8B0000;
+
+  margin-top: 10px;
+
+  font-weight: 700;
+}
+
+.district-content p {
+  margin-top: 10px;
+
+  color: #666;
+}
+
+.district-content button {
+  margin-top: 20px;
+
+  border: none;
+
+  padding: 12px 25px;
+
+  border-radius: 50px;
+
+  color: white;
+
+  background:
+  linear-gradient(
+    135deg,
+    #FFC107,
+    #8B0000
+  );
+}
+
+
+/* ===================================
+   RASIPURAM SECTION
+=================================== */
+
+.rasipuram-section {
+  padding: 120px 8%;
+
+  background: white;
+}
+
+/* SLIDER */
+
+.leadership-slider {
+  display: flex;
+
+  gap: 30px;
+
+  overflow-x: auto;
+
+  scroll-behavior: smooth;
+
+  padding-bottom: 20px;
+}
+
+.leadership-slider::-webkit-scrollbar {
+  height: 8px;
+}
+
+.leadership-slider::-webkit-scrollbar-thumb {
+  background:
+    linear-gradient(
+      90deg,
+      #FFC107,
+      #8B0000
+    );
+
+  border-radius: 10px;
+}
+
+/* CARD */
+
+.official-card {
+  min-width: 320px;
+
+  background: white;
+
+  border-radius: 25px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 20px 50px rgba(0,0,0,.08);
+
+  transition: .4s ease;
+}
+
+.official-card:hover {
+  transform:
+    translateY(-10px)
+    scale(1.02);
+}
+
+.official-card img {
+  width: 100%;
+
+  height: 300px;
+
+  object-fit: cover;
+}
+
+.official-content {
+  padding: 25px;
+}
+
+.official-content h3 {
+  font-size: 1.4rem;
+
+  font-weight: 700;
+}
+
+.official-content span {
+  display: block;
+
+  margin-top: 10px;
+
+  color: #8B0000;
+
+  font-weight: 700;
+}
+
+.official-content p {
+  margin-top: 10px;
+
+  color: #666;
+}
+
+.official-content button {
+  margin-top: 20px;
+
+  border: none;
+
+  padding: 12px 25px;
+
+  border-radius: 50px;
+
+  color: white;
+
+  background:
+    linear-gradient(
+      135deg,
+      #FFC107,
+      #8B0000
+    );
+}
+
+/* ===========================
+   SENIOR LEADERSHIP
+=========================== */
+
+.senior-section{
+  padding:100px 8%;
+  background:#fff;
+}
+
+.section-title{
+  text-align:center;
+  margin-bottom:60px;
+}
+
+.section-title span{
+  display:inline-block;
+
+  padding:10px 22px;
+
+  border-radius:50px;
+
+  color:white;
+
+  background:
+  linear-gradient(
+    135deg,
+    #FFC107,
+    #8B0000
+  );
+}
+
+.section-title h2{
+  margin-top:20px;
+
+  font-size:
+  clamp(2rem,4vw,4rem);
+
+  font-weight:800;
+
+  background:
+  linear-gradient(
+    90deg,
+    #8B0000,
+    #FFC107
+  );
+
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+/* GRID */
+
+.senior-grid{
+  display:grid;
+
+  grid-template-columns:
+  repeat(2,1fr);
+
+  gap:40px;
+}
+
+/* CARD */
+
+.senior-card{
+  position:relative;
+
+  overflow:hidden;
+
+  border-radius:35px;
+
+  background:white;
+
+  box-shadow:
+  0 20px 60px rgba(0,0,0,.08);
+
+  transition:.4s ease;
+}
+
+.senior-card:hover{
+  transform:
+  translateY(-10px);
+}
+
+.senior-card::before{
+  content:"";
+
+  position:absolute;
+
+  inset:0;
+
+  padding:2px;
+
+  border-radius:35px;
+
+  background:
+  linear-gradient(
+    90deg,
+    #FFC107,
+    #8B0000,
+    #FFC107
+  );
+
+  background-size:300% 300%;
+
+  animation:
+  borderMove 5s linear infinite;
+
+  -webkit-mask:
+    linear-gradient(#fff 0 0)
+    content-box,
+    linear-gradient(#fff 0 0);
+
+  -webkit-mask-composite:xor;
+}
+
+.card-glow{
+  position:absolute;
+
+  width:250px;
+  height:250px;
+
+  background:
+  radial-gradient(
+    rgba(255,193,7,.25),
+    transparent
+  );
+
+  top:-100px;
+  right:-100px;
+}
+
+.senior-image{
+  width:100%;
+  height:380px;
+
+  object-fit:cover;
+
+  transition:.5s ease;
+}
+
+.senior-card:hover .senior-image{
+  transform:scale(1.05);
+}
+
+.senior-content{
+  padding:30px;
+}
+
+.senior-content h3{
+  font-size:2rem;
+  font-weight:800;
+}
+
+.senior-content p{
+  margin-top:10px;
+
+  color:#8B0000;
+
+  line-height:1.6;
+}
+
+.senior-content button{
+  margin-top:20px;
+
+  border:none;
+
+  padding:14px 28px;
+
+  border-radius:50px;
+
+  color:white;
+
+  font-weight:700;
+
+  background:
+  linear-gradient(
+    135deg,
+    #FFC107,
+    #8B0000
+  );
+}
+
+/* MOBILE */
+
+@media(max-width:992px){
+
+  .senior-grid{
+    grid-template-columns:1fr;
+  }
+
+}
+
+
+/* ===================================
+   DISTRICT SECTION
+=================================== */
+
+.district-section{
+  padding:100px 8%;
+  background:#fff;
+}
+
+.district-wrapper{
+  display:flex;
+  flex-direction:column;
+  gap:35px;
+}
+
+/* CARD */
+
+.district-card{
+  display:flex;
+  align-items:center;
+
+  gap:30px;
+
+  background:white;
+
+  border-radius:30px;
+
+  overflow:hidden;
+
+  position:relative;
+
+  box-shadow:
+  0 15px 50px rgba(0,0,0,.08);
+
+  transition:.4s ease;
+}
+
+.district-card:hover{
+  transform:
+  translateY(-8px);
+}
+
+.district-card::before{
+  content:"";
+
+  position:absolute;
+
+  inset:0;
+
+  padding:2px;
+
+  border-radius:30px;
+
+  background:
+  linear-gradient(
+    90deg,
+    #FFC107,
+    #8B0000,
+    #FFC107
+  );
+
+  background-size:300% 300%;
+
+  animation:
+  borderMove 5s linear infinite;
+
+  -webkit-mask:
+    linear-gradient(#fff 0 0)
+    content-box,
+    linear-gradient(#fff 0 0);
+
+  -webkit-mask-composite:xor;
+}
+
+/* IMAGE */
+
+.district-image-box{
+  flex:0 0 280px;
+}
+
+.district-image{
+  width:100%;
+  height:250px;
+
+  object-fit:cover;
+
+  transition:.4s ease;
+}
+
+.district-card:hover .district-image{
+  transform:scale(1.05);
+}
+
+/* INFO */
+
+.district-info{
+  padding:20px;
+}
+
+.district-badge{
+  display:inline-block;
+
+  padding:8px 18px;
+
+  border-radius:30px;
+
+  color:white;
+
+  background:
+  linear-gradient(
+    135deg,
+    #FFC107,
+    #8B0000
+  );
+}
+
+.district-info h3{
+  margin-top:15px;
+
+  font-size:2rem;
+
+  font-weight:800;
+}
+
+.district-info p{
+  margin-top:10px;
+
+  color:#8B0000;
+
+  font-weight:600;
+}
+
+.district-info button{
+  margin-top:20px;
+
+  border:none;
+
+  padding:12px 25px;
+
+  border-radius:50px;
+
+  color:white;
+
+  font-weight:700;
+
+  background:
+  linear-gradient(
+    135deg,
+    #FFC107,
+    #8B0000
+  );
+}
+
+/* MOBILE */
+
+@media(max-width:992px){
+
+  .district-card{
+    flex-direction:column;
+  }
+
+  .district-image-box{
+    width:100%;
+  }
+
+  .district-image{
+    width:100%;
+    height:300px;
+  }
+
+  .district-info{
+    text-align:center;
+  }
+
+}
+
+/* =====================================
+   RASIPURAM SLIDER
+===================================== */
+
+.rasipuram-section{
+  padding:120px 8%;
+  background:#fff;
+}
+
+.rasipuram-swiper{
+  width:100%;
+  padding-top:50px;
+  padding-bottom:80px;
+}
+
+.swiper-slide{
+  width:350px;
+}
+
+/* CARD */
+
+.official-slide{
+  background:white;
+
+  border-radius:30px;
+
+  overflow:hidden;
+
+  position:relative;
+
+  box-shadow:
+  0 20px 60px rgba(0,0,0,.08);
+
+  transition:.4s ease;
+}
+
+.official-slide::before{
+  content:"";
+
+  position:absolute;
+
+  inset:0;
+
+  padding:2px;
+
+  border-radius:30px;
+
+  background:
+  linear-gradient(
+    90deg,
+    #FFC107,
+    #8B0000,
+    #FFC107
+  );
+
+  background-size:300% 300%;
+
+  animation:
+  borderMove 5s linear infinite;
+
+  -webkit-mask:
+    linear-gradient(#fff 0 0)
+    content-box,
+    linear-gradient(#fff 0 0);
+
+  -webkit-mask-composite:xor;
+}
+
+.official-slide:hover{
+  transform:
+  translateY(-10px);
+}
+
+.official-slide img{
+  width:100%;
+  height:380px;
+
+  object-fit:cover;
+
+  transition:.4s ease;
+}
+
+.official-slide:hover img{
+  transform:scale(1.05);
+}
+
+.official-content{
+  padding:25px;
+  text-align:center;
+}
+
+.official-content h3{
+  font-size:1.6rem;
+  font-weight:800;
+}
+
+.official-content p{
+  color:#8B0000;
+
+  margin-top:10px;
+
+  font-weight:600;
+}
+
+.official-content button{
+  margin-top:20px;
+
+  border:none;
+
+  padding:12px 25px;
+
+  border-radius:50px;
+
+  color:white;
+
+  font-weight:700;
+
+  background:
+  linear-gradient(
+    135deg,
+    #FFC107,
+    #8B0000
+  );
+}
+
+
+.leadership-wrapper{
+  position:relative;
+  overflow:hidden;
+  background:white;
+}
+
+.leadership-bg-circle{
+  position:absolute;
+  border-radius:50%;
+  filter:blur(100px);
+}
+
+.circle-one{
+  width:300px;
+  height:300px;
+
+  background:
+  rgba(255,193,7,.15);
+
+  top:100px;
+  left:-100px;
+}
+
+.circle-two{
+  width:350px;
+  height:350px;
+
+  background:
+  rgba(139,0,0,.12);
+
+  right:-100px;
+  top:600px;
+}
+
+.circle-three{
+  width:400px;
+  height:400px;
+
+  background:
+  rgba(255,193,7,.08);
+
+  bottom:0;
+  left:30%;
+}

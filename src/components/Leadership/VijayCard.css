@@ -1,0 +1,260 @@
+/* ===================================
+   SECTION
+=================================== */
+
+.vijay-section {
+  padding: 80px 8%;
+  background: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ===================================
+   CONTAINER
+=================================== */
+
+.vijay-container {
+  max-width: 1400px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: 420px 1fr;
+
+  gap: 40px;
+
+  align-items: center;
+}
+
+/* ===================================
+   IMAGE
+=================================== */
+
+.vijay-image-wrapper {
+  position: relative;
+}
+
+.vijay-image-wrapper::before {
+  content: "";
+
+  position: absolute;
+
+  width: 280px;
+  height: 280px;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(255, 193, 7, 0.25),
+      transparent
+    );
+
+  filter: blur(50px);
+
+  z-index: -1;
+}
+
+.vijay-image {
+  width: 100%;
+  height: 520px;
+
+  object-fit: cover;
+
+  border-radius: 35px;
+
+  box-shadow:
+    0 25px 60px rgba(0,0,0,.12);
+}
+
+/* ===================================
+   CONTENT
+=================================== */
+
+.role-badge {
+  display: inline-block;
+
+  padding: 10px 22px;
+
+  border-radius: 50px;
+
+  color: white;
+
+  font-weight: 700;
+
+  background:
+    linear-gradient(
+      135deg,
+      #FFC107,
+      #8B0000
+    );
+}
+
+.vijay-content h1 {
+  margin-top: 18px;
+
+  font-size:
+    clamp(3rem, 6vw, 5rem);
+
+  font-weight: 900;
+
+  letter-spacing: 4px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #8B0000,
+      #FFC107
+    );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.vijay-quote {
+  margin-top: 15px;
+
+  font-size: 1.1rem;
+
+  color: #555;
+
+  line-height: 1.8;
+
+  max-width: 700px;
+}
+
+/* ===================================
+   PRINCIPLES GRID
+=================================== */
+
+.principles-grid {
+  margin-top: 30px;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 18px;
+}
+
+/* ===================================
+   PRINCIPLE CARD
+=================================== */
+
+.principle-card {
+  padding: 22px;
+
+  border-radius: 22px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ffffff,
+      #fffdf8
+    );
+
+  border: 1px solid
+    rgba(255,193,7,.15);
+
+  box-shadow:
+    0 12px 35px rgba(0,0,0,.05);
+
+  transition: all .4s ease;
+}
+
+.principle-card:hover {
+  box-shadow:
+    0 20px 40px rgba(139,0,0,.08);
+
+  border-color:
+    rgba(139,0,0,.15);
+}
+
+.principle-card span {
+  display: inline-block;
+
+  font-size: .75rem;
+
+  letter-spacing: 1px;
+
+  text-transform: uppercase;
+
+  color: #8B0000;
+
+  font-weight: 700;
+}
+
+.principle-card h4 {
+  margin-top: 10px;
+
+  font-size: 1.15rem;
+
+  font-weight: 800;
+
+  color: #222;
+}
+
+.principle-card p {
+  margin-top: 12px;
+
+  font-size: .92rem;
+
+  line-height: 1.7;
+
+  color: #666;
+}
+
+/* ===================================
+   RESPONSIVE
+=================================== */
+
+@media (max-width: 1200px) {
+
+  .vijay-container {
+    grid-template-columns: 1fr;
+  }
+
+  .vijay-image {
+    max-width: 450px;
+    margin: auto;
+    display: block;
+  }
+
+  .vijay-content {
+    text-align: center;
+  }
+
+  .vijay-quote {
+    margin-inline: auto;
+  }
+}
+
+@media (max-width: 992px) {
+
+  .principles-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .vijay-image {
+    height: 450px;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .vijay-section {
+    padding: 60px 5%;
+  }
+
+  .vijay-image {
+    height: 350px;
+  }
+
+  .vijay-content h1 {
+    letter-spacing: 2px;
+  }
+}

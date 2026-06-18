@@ -1,0 +1,245 @@
+/* ==========================================
+   NAVBAR
+========================================== */
+
+.custom-navbar {
+
+  position: absolute;
+
+  top: 15px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  z-index: 9999;
+
+  width: 95%;
+
+  border-radius: 30px;
+
+  background: rgba(20,20,20,0.25) !important;
+
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+
+  border: 1px solid rgba(255,255,255,0.1);
+
+  padding: 12px 20px;
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.25);
+
+  transition: all .4s ease;
+}
+
+.custom-navbar:hover {
+
+  border-color: rgba(255,193,7,.4);
+
+  box-shadow:
+    0 0 20px rgba(255,193,7,.15),
+    0 0 40px rgba(139,0,0,.15),
+    0 10px 30px rgba(0,0,0,.25);
+}
+
+/* ==========================================
+   BRAND
+========================================== */
+
+.navbar-brand-custom {
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  cursor: pointer;
+}
+
+.nav-logo {
+
+  width: 58px;
+  height: 58px;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+
+  border: 2px solid rgba(255,255,255,.15);
+
+  transition: .4s;
+}
+
+.navbar-brand-custom:hover .nav-logo {
+
+  transform: scale(1.08);
+
+  box-shadow:
+    0 0 15px rgba(255,193,7,.5),
+    0 0 25px rgba(139,0,0,.4);
+}
+
+.logo-text {
+
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-text-main {
+
+  color: white;
+
+  font-weight: 800;
+
+  font-size: clamp(1rem,1.5vw,1.6rem);
+
+  transition: .4s;
+}
+
+.logo-text-sub {
+
+  color: rgba(255,255,255,.8);
+
+  font-size: clamp(.7rem,.9vw,.95rem);
+
+  transition: .4s;
+}
+
+.navbar-brand-custom:hover .logo-text-main {
+
+  background:
+    linear-gradient(
+      90deg,
+      #FFC107,
+      #8B0000
+    );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navbar-brand-custom:hover .logo-text-sub {
+
+  color: #FFC107;
+}
+
+/* ==========================================
+   LANGUAGE
+========================================== */
+
+.language-toggle {
+
+  background: white;
+
+  border-radius: 50px;
+
+  padding: 5px;
+}
+
+.lang-btn {
+
+  border: none;
+
+  background: transparent;
+
+  padding: 10px 20px;
+
+  font-weight: 700;
+}
+
+.lang-btn.active {
+
+  color: white;
+
+  border-radius: 40px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ff9800,
+      #8b0000
+    );
+}
+
+/* ==========================================
+   LOGIN
+========================================== */
+
+.login-btn {
+
+  border: none !important;
+
+  min-width: 120px;
+
+  height: 50px;
+
+  font-weight: 700;
+
+  border-radius: 16px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #8b0000,
+      #c62828
+    ) !important;
+}
+
+.login-btn:hover {
+
+  transform: translateY(-3px);
+
+  background:
+    linear-gradient(
+      135deg,
+      #FFC107,
+      #8B0000
+    ) !important;
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media(max-width:992px){
+
+  .logo-text-sub{
+    display:none;
+  }
+
+  .language-toggle{
+    display:none !important;
+  }
+
+  .nav-logo{
+    width:50px;
+    height:50px;
+  }
+
+  .logo-text-main{
+    font-size:1rem;
+  }
+}
+
+@media(max-width:576px){
+
+  .custom-navbar{
+    width:96%;
+    top:10px;
+    padding:10px 15px;
+  }
+
+  .nav-logo{
+    width:42px;
+    height:42px;
+  }
+
+  .logo-text-main{
+    font-size:.9rem;
+  }
+
+  .login-btn{
+    min-width:80px;
+    height:42px;
+    font-size:.85rem;
+  }
+}

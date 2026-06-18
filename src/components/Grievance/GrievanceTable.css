@@ -1,0 +1,128 @@
+/* ==================================
+   SECTION
+================================== */
+
+.grievance-table-section {
+
+  padding: 100px 6%;
+
+  background: #ffffff;
+}
+
+.table-tag {
+
+  display:flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px 20px;
+
+  border-radius: 50px;
+
+  color: white;
+
+  font-weight: 700;
+
+  background:
+  linear-gradient(
+    135deg,
+    #FFC107,
+    #8B0000
+  );
+}
+
+.grievance-table-section h2 {
+
+  margin-top: 20px;
+
+  text-align: center;
+
+  font-size:
+  clamp(2rem,4vw,4rem);
+
+  font-weight: 900;
+
+  background:
+  linear-gradient(
+    90deg,
+    #8B0000,
+    #FFC107
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ==================================
+   TABLE
+================================== */
+
+.table-wrapper {
+
+  margin-top: 50px;
+
+  overflow-x: auto;
+
+  border-radius: 24px;
+
+  box-shadow:
+  0 15px 40px rgba(0,0,0,.08);
+}
+
+.grievance-table {
+
+  width: 100%;
+
+  border-collapse: collapse;
+
+  background: white;
+}
+
+.grievance-table thead {
+
+  background:
+  linear-gradient(
+    135deg,
+    #FFC107,
+    #8B0000
+  );
+
+  color: white;
+}
+
+.grievance-table th {
+
+  padding: 18px;
+
+  text-align: left;
+
+  font-weight: 700;
+}
+
+.grievance-table td {
+
+  padding: 16px;
+
+  border-bottom:
+  1px solid #eee;
+}
+
+.grievance-table tbody tr {
+
+  transition: .3s ease;
+}
+
+.grievance-table tbody tr:hover {
+
+  background:
+  rgba(255,193,7,.06);
+}
+
+.no-data {
+
+  text-align: center;
+
+  padding: 30px;
+
+  color: #888;
+}
