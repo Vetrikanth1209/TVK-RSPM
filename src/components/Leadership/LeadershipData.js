@@ -36,8 +36,8 @@ const leadershipData = {
       image: senthilnathan,
     },
     {
-      name: "திரு. மாணிக்கம்",
-      role: "வட்டச் செயலாளர்",
+      name: "திரு. SM .மாணிக்கம்",
+      role: "நகர செயலாளர்",
       district: "ராசிபுரம்",
       image: maanikam,
     },
