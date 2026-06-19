@@ -8,10 +8,12 @@ const SeniorLeadership = () => {
 
       <div className="district-heading">
 
-        <span>Executive Leadership</span>
+        <span>
+          தலைமை நிர்வாகம்
+        </span>
 
         <h2>
-          Senior Leadership Team
+          மூத்த தலைமைக் குழு
         </h2>
 
       </div>
@@ -56,7 +58,7 @@ const SeniorLeadership = () => {
               <div className="district-content">
 
                 <span className="district-badge">
-                  Senior Leadership
+                  மாநில தலைமைக் குழு
                 </span>
 
                 <h3>
@@ -69,9 +71,7 @@ const SeniorLeadership = () => {
 
                 <div className="district-line"></div>
 
-                <button>
-                  View Profile
-                </button>
+                
 
               </div>
 

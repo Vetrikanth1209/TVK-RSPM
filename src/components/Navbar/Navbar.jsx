@@ -37,25 +37,7 @@ const CustomNavbar = () => {
 
         </Navbar.Brand>
 
-        <div className="d-flex align-items-center gap-3">
-
-          <div className="language-toggle d-none d-md-flex">
-
-            <button className="lang-btn active">
-              English
-            </button>
-
-            <button className="lang-btn">
-              தமிழ்
-            </button>
-
-          </div>
-
-          <Button className="login-btn">
-            Login
-          </Button>
-
-        </div>
+        
 
       </Container>
     </Navbar>

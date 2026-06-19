@@ -8,10 +8,10 @@ const DistrictLeadership = () => {
 
       <div className="senior-heading">
 
-        <span>District Leadership</span>
+        <span>மாவட்ட நிர்வாகம்</span>
 
         <h2>
-          Namakkal District Team
+          நாமக்கல் மாவட்ட குழு
         </h2>
 
       </div>

@@ -34,11 +34,11 @@ const GrievanceTable = () => {
       >
 
         <span className="table-tag">
-          Citizen Records
+          மக்கள் பதிவுகள்
         </span>
 
         <h2>
-          Submitted Grievances
+          பதிவு செய்யப்பட்ட குறைகள்
         </h2>
 
       </motion.div>
@@ -51,19 +51,19 @@ const GrievanceTable = () => {
 
             <tr>
 
-              <th>ID</th>
+              <th>எண்</th>
 
-              <th>Name</th>
+              <th>பெயர்</th>
 
-              <th>Phone</th>
+              <th>கைபேசி</th>
 
-              <th>Ward</th>
+              <th>வார்டு</th>
 
-              <th>Category</th>
+              <th>பிரிவு</th>
 
-              <th>Issue</th>
+              <th>குறை</th>
 
-              <th>Date</th>
+              <th>தேதி</th>
 
             </tr>
 
@@ -92,7 +92,7 @@ const GrievanceTable = () => {
                   <td>
                     {new Date(
                       item.createdAt
-                    ).toLocaleDateString()}
+                    ).toLocaleDateString("ta-IN")}
                   </td>
 
                 </tr>
@@ -107,7 +107,7 @@ const GrievanceTable = () => {
                   colSpan="7"
                   className="no-data"
                 >
-                  No Grievances Submitted Yet
+                  இதுவரை எந்த குறையும் பதிவு செய்யப்படவில்லை
                 </td>
 
               </tr>

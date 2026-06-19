@@ -22,7 +22,7 @@ const Footer = () => {
           </h3>
 
           <p>
-            Rasipuram Citizen Connect
+            ராசிபுரம் குடிமக்கள் இணைப்பு
           </p>
 
           <span className="footer-tagline">
@@ -31,29 +31,23 @@ const Footer = () => {
 
         </div>
 
-        <div className="footer-links">
-
-          <h4>Quick Links</h4>
-
-          <ul>
-            <li>Home</li>
-            <li>Leadership</li>
-            <li>Grievances</li>
-            <li>Citizen Services</li>
-            <li>Contact</li>
-          </ul>
-
-        </div>
-
         <div className="footer-contact">
 
-          <h4>Contact</h4>
+          <h4>
+            தொடர்புக்கு
+          </h4>
 
-          <p>📍 Rasipuram, Namakkal</p>
+          <p>
+            📍 ராசிபுரம், நாமக்கல்
+          </p>
 
-          <p>📧 support@rasipuramconnect.in</p>
+          <p>
+            📧 support@rasipuramconnect.in
+          </p>
 
-          <p>📞 +91 98765 43210</p>
+          <p>
+            📞 +91 98765 43210
+          </p>
 
         </div>
 
@@ -62,8 +56,8 @@ const Footer = () => {
       <div className="footer-bottom">
 
         <p>
-          © 2026 Rasipuram Citizen Connect.
-          All Rights Reserved.
+          © 2026 ராசிபுரம் குடிமக்கள் இணைப்பு.
+          அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை.
         </p>
 
       </div>

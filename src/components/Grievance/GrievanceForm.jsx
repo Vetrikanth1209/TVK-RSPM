@@ -28,7 +28,7 @@ const GrievanceForm = () => {
 
     await saveGrievance(formData);
 
-    alert("Grievance Submitted Successfully!");
+    alert("உங்கள் குறை பதிவு வெற்றிகரமாக சமர்ப்பிக்கப்பட்டது!");
 
     setFormData({
       name: "",
@@ -50,11 +50,11 @@ const GrievanceForm = () => {
       >
 
         <span className="grievance-tag">
-          Citizen Support
+          மக்கள் சேவை
         </span>
 
         <h2>
-          Report Your Grievance
+          உங்கள் குறையை பதிவு செய்யுங்கள்
         </h2>
 
         <form
@@ -65,7 +65,7 @@ const GrievanceForm = () => {
           <input
             type="text"
             name="name"
-            placeholder="Full Name"
+            placeholder="முழு பெயர்"
             value={formData.name}
             onChange={handleChange}
             required
@@ -74,7 +74,7 @@ const GrievanceForm = () => {
           <input
             type="tel"
             name="phone"
-            placeholder="Mobile Number"
+            placeholder="கைபேசி எண்"
             value={formData.phone}
             onChange={handleChange}
             required
@@ -88,12 +88,12 @@ const GrievanceForm = () => {
           >
 
             <option value="">
-              Select Ward
+              வார்டை தேர்வு செய்யவும்
             </option>
 
             {[...Array(27)].map((_, i) => (
               <option key={i}>
-                Ward {i + 1}
+                வார்டு {i + 1}
               </option>
             ))}
 
@@ -107,29 +107,29 @@ const GrievanceForm = () => {
           >
 
             <option value="">
-              Select Category
+              பிரிவை தேர்வு செய்யவும்
             </option>
 
-            <option>Roads</option>
-            <option>Drainage</option>
-            <option>Street Lights</option>
-            <option>Water Supply</option>
-            <option>Garbage</option>
-            <option>Others</option>
+            <option>சாலை</option>
+            <option>வடிகால்</option>
+            <option>தெரு விளக்கு</option>
+            <option>குடிநீர்</option>
+            <option>குப்பை அகற்றுதல்</option>
+            <option>மற்றவை</option>
 
           </select>
 
           <textarea
             rows="5"
             name="issue"
-            placeholder="Describe your grievance"
+            placeholder="உங்கள் குறையை விவரிக்கவும்"
             value={formData.issue}
             onChange={handleChange}
             required
           />
 
           <button type="submit">
-            Submit Grievance
+            குறையை சமர்ப்பிக்கவும்
           </button>
 
         </form>

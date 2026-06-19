@@ -21,16 +21,16 @@ const RasipuramSlider = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
       >
-        <span>Rasipuram Leadership</span>
+        <span>ராசிபுரம் நிர்வாகம்</span>
 
         <h2>
-          Local Leadership Team
+          உள்ளூர் தலைமைக் குழு
         </h2>
 
         <p>
-          Dedicated officials working towards
-          citizen welfare, development and
-          transparent governance.
+          மக்களின் நலன், வளர்ச்சி மற்றும்
+          வெளிப்படையான நிர்வாகத்திற்காக
+          அர்ப்பணிப்புடன் செயல்படும் நிர்வாகிகள்.
         </p>
       </motion.div>
 
@@ -90,9 +90,6 @@ const RasipuramSlider = () => {
                     {official.role}
                   </p>
 
-                  <button>
-                    View Profile
-                  </button>
 
                 </div>
 
