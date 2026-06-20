@@ -5,6 +5,9 @@ import senthilnathan from "../../assets/leaders/senthilnathan.jpg";
 import lokesh from "../../assets/leaders/lokesh.jpg";
 import maanikam from "../../assets/leaders/maanikam.jpg";
 import placeholder from "../../assets/leaders/placeholder.png";
+import manoj from "../../assets/leaders/manoj.jpeg";
+import mani from "../../assets/leaders/manikandan.jpeg";
+import prabhu from "../../assets/leaders/prabhu.jpeg";
 
 const leadershipData = {
   topLeader: {
@@ -22,37 +25,43 @@ const leadershipData = {
       image: anand,
     },
     {
-      name: "திரு. டி. லோகேஷ் தமிழ்செல்வன்",
-      role: "கட்சி நிர்வாகி மற்றும் வணிகவரி, பதிவுத்துறை மற்றும் முத்திரைத்தாள் சட்ட அமைச்சர்",
-      image: lokesh,
+      name: "திரு. ஜே.ஜே. செந்தில்நாதன்",
+      role: "மாவட்டச் செயலாளர்",
+      image: senthilnathan,
     },
   ],
 
   districtLeaders: [
     {
-      name: "திரு. ஜே.ஜே. செந்தில்நாதன்",
-      role: "மாவட்டச் செயலாளர்",
-      district: "நாமக்கல் கிழக்கு",
-      image: senthilnathan,
+      name: "திரு. டி. லோகேஷ் தமிழ்செல்வன்",
+      role: "கட்சி நிர்வாகி மற்றும் அமைச்சர்",
+      district: "ராசிபுரம் சட்டமன்ற தொகுதி",
+      image: lokesh,
     },
     {
-      name: "திரு.SM.மாணிக்கம்",
-      role: "நகர செயலாளர்",
+      name: "திரு. மாணிக்கம்",
+      role: "ராசிபுரம் நகரச் செயலாளர்",
       district: "ராசிபுரம்",
       image: maanikam,
+    },
+    {
+      name: "திரு. நண்பன் பிரபு",
+      role: "மாவட்ட இளைஞர் அணி செயலாளர்",
+      district: "ராசிபுரம்",
+      image: prabhu,
     },
   ],
 
   rasipuramOfficials: [
     {
-      name: "அதிகாரி பெயர்",
-      role: "நகரச் செயலாளர்",
-      image: placeholder,
+      name: "திரு. மனோஜ்குமார்",
+      role: "11 வார்டு செயலாளர்",
+      image: manoj,
     },
     {
-      name: "அதிகாரி பெயர்",
-      role: "ஒன்றியச் செயலாளர்",
-      image: placeholder,
+      name: "திரு. மணிகண்டன்",
+      role: "வார்டு இணை செயலாளர்",
+      image: mani,
     },
     {
       name: "அதிகாரி பெயர்",
