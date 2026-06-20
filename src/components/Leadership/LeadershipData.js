@@ -33,10 +33,10 @@ const leadershipData = {
 
   districtLeaders: [
     {
-      name: "திரு. டி. லோகேஷ் தமிழ்செல்வன்",
-      role: "கட்சி நிர்வாகி மற்றும் அமைச்சர்",
-      district: "ராசிபுரம் சட்டமன்ற தொகுதி",
-      image: lokesh,
+      name: "திரு. நண்பன் பிரபு",
+      role: "மாவட்ட இளைஞர் அணி செயலாளர்",
+      district: "ராசிபுரம்",
+      image: prabhu,
     },
     {
       name: "திரு. மாணிக்கம்",
@@ -45,10 +45,10 @@ const leadershipData = {
       image: maanikam,
     },
     {
-      name: "திரு. நண்பன் பிரபு",
-      role: "மாவட்ட இளைஞர் அணி செயலாளர்",
-      district: "ராசிபுரம்",
-      image: prabhu,
+      name: "திரு. டி. லோகேஷ் தமிழ்செல்வன்",
+      role: "கட்சி நிர்வாகி மற்றும் அமைச்சர்",
+      district: "ராசிபுரம் சட்டமன்ற தொகுதி",
+      image: lokesh,
     },
   ],
 
